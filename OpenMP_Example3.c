@@ -39,7 +39,7 @@ int main(int argc, char **argv){
 			for(i = 0; i < N; i++){
 				int tid_s2 = omp_get_thread_num();
 				printf("\tIter %d running from thread %d\n", i, tid_s2);
-				45 d[i] = a[i] * b[i];
+				d[i] = a[i] * b[i];
 				// Increase count
 				count[tid_s2]++;
 			}
